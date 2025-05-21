@@ -1,0 +1,110 @@
+.taskList {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.taskItem {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.taskItem:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.completed {
+  border-left: 5px solid #4caf50;
+}
+
+.taskContent {
+  padding: 1.25rem;
+}
+
+.taskHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.75rem;
+}
+
+.taskTitle {
+  font-size: 1.25rem;
+  color: #333;
+  margin: 0;
+  word-break: break-word;
+}
+
+.taskDescription {
+  color: #666;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  word-break: break-word;
+}
+
+.taskActions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.editButton,
+.deleteButton {
+  border: none;
+  padding: 0.5rem 0.75rem;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.editButton {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.editButton:hover {
+  background-color: #e0e0e0;
+}
+
+.deleteButton {
+  background-color: #ffebee;
+  color: #d32f2f;
+}
+
+.deleteButton:hover {
+  background-color: #ffcdd2;
+}
+
+.taskStatus {
+  display: flex;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+.checkboxContainer {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+  color: #666;
+}
+
+.checkbox {
+  margin-right: 0.5rem;
+  cursor: pointer;
+  width: 18px;
+  height: 18px;
+}
+
+.emptyState {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+  color: #666;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}

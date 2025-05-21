@@ -1,0 +1,43 @@
+.filterContainer {
+  background-color: white;
+  padding: 1.25rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.filterTitle {
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  color: #333;
+}
+
+.filterButtons {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.filterButton {
+  background-color: #f0f0f0;
+  border: none;
+  padding: 0.75rem 1.25rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  color: #555;
+  transition: all 0.2s;
+}
+
+.filterButton:hover {
+  background-color: #e0e0e0;
+}
+
+.filterButton.active {
+  background-color: #4a6eb5;
+  color: white;
+}
+
+@media (max-width: 600px) {
+  .filterButtons {
+    flex-direction: column;
+  }
+}
